@@ -4,7 +4,7 @@ function comecar(){
     show(name);
 }
 
-function show(name){
+function show(nome){
     document.getElementById("nomePrint").textContent = none;
     var div = document.getElementById("selects-div");
     if(nome && nome.trim() !== ""){
