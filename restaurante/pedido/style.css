@@ -1,28 +1,26 @@
-*{
+* {
     margin: 0;
     padding: 0;
-}
-
-body{
+  }
+  
+  body {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     justify-content: center;
-    gap: 2vh;
-}
-
-#selects-div{
+    gap: 2vw;
+    background-image:url("../imagens/fundopedido.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  #selects-div {
     display: none;
-    flex-direction: column;
-    gap: 2vh;
-}
-
-.badge{
-    font-size: 1.4rem !important;
-}
-
-.error-modal{
+  }
+  
+  .error-modal {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -31,48 +29,38 @@ body{
     min-width: 300px;
     height: auto;
     padding: 20px;
-    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     border-radius: 20px;
-    border: 3px solid;
-    background-color: aquamarine;
+    background-color: lightpink;
     font-size: 1.4rem;
     text-align: center;
-}
-
-.error-btn{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: auto;
-    min-width: 300px;
-    height: auto;
-    padding: 20px;
     display: none;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 20px;
-    border: 3px solid grey;
-    background-color: whitesmoke;
-    box-shadow: chocolate;
-    font-size: 1.4rem;
-    text-align: center;
-}
-
-.error-btn{
+  }
+  
+  .error-btn {
     padding: 10px;
     border: none;
-    border-radius: 999px;
-    color: bisque;
-    opacity: 0.7;
-}
-
-.error-btn:hover{
-    opacity: 1;
-    cursor: pointer;
-    box-shadow: brown;
-}
+    color: rgb(97, 26, 26);
+    border-radius: 20px;
+  }
+  
+  .totalDiv {
+    width: 100%;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    gap: 5px;
+    display: none;
+  }
+  
+  .badge {
+    font-size: 1.4rem !important;
+  }
+  
+  @media (width >= 1024px) {
+    body {
+      align-items: center;
+    }
+  }

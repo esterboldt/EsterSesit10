@@ -42,9 +42,12 @@ h1, h2{
         background-image: url(../imagens/horizontalmesa.jpg);
     }
     .wrap-cards{
+        display: flex;
         width: 100%;
         flex-direction: row;
         flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -54,4 +57,6 @@ h1, h2{
 
 .card-img-top{
     max-width: 100%;
+    max-height: 180px;
 }
+
